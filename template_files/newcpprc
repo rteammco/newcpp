@@ -1,0 +1,22 @@
+src_dir = source
+bin_dir = bin
+lib_dir = lib
+
+require gflags
+require glog
+require gtest
+require gmock
+
+BEGIN_TEMPLATE_FILE main.cpp
+#include <iostream>
+
+#include <glog/logging.h>
+#include <gflags/gflags.h>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+  cout << "Hello, world." << endl;
+  return EXIT_SUCCESS;
+}
+END_TEMPLATE_FILE
